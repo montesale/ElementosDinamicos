@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A & C - Tienda de Ropa</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header" class="bg-dark text-white text-center py-3">
+        <h1><a href="#" class="text-white text-decoration-none">A & C - Tienda de Ropa</a></h1>
+        <nav id="navbar">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="#quienes-somos">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#quienes-somos">¿Quiénes Somos?</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#ropa-moda">Ropa de Moda</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <section id="quienes-somos" class="mb-4">
+            <h2 class="text-center">¿Quiénes Somos?</h2>
+            <div id="info-container" class="box-blue p-3 rounded shadow">
+                <p id="info-text">En A & C - Tienda de Ropa y calzado, creemos que cada persona merece vestir con estilo y confianza. Somos más que una simple tienda de ropa; somos tu socio en moda, dedicado a ofrecerte las últimas tendencias y piezas esenciales que realzan tu personalidad y estilo único.</p>
+            </div>
+        </section>
+
+        <section id="recomendaciones" class="hidden box-blue mb-4 p-3 rounded shadow">
+            <h2 class="text-center">¡Descubre Nuestras Recomendaciones Exclusivas!</h2>
+            <p>¡Bienvenidos a la mejor selección de moda! En A & C - Tienda de Ropa y Calzado, nos apasiona ayudarte a encontrar las piezas perfectas que resalten tu personalidad y te hagan sentir increíble. Desde lo clásico y sofisticado hasta lo más moderno y atrevido, tenemos algo para cada gusto y ocasión. ¡No te pierdas nuestras recomendaciones exclusivas y transforma tu guardarropa con las últimas tendencias!</p>
+        </section>
+
+        <section id="ropa-moda" class="mb-4">
+            <h2 class="text-center">Recomendaciones de ropa</h2>
+            <div id="ropa-info" class="hidden text-center">
+                <img src="Ropa.jpg" alt="Descripción de la imagen" class="img-fluid mx-auto d-block">
+            </div>
+            <button id="ver-recomendaciones" class="btn btn-primary d-block mx-auto">Ver Recomendaciones</button>
+        </section>
+
+        <section id="tennis" class="mb-4">
+            <h2 class="text-center">Tenis</h2>
+            <div class="tennis-container d-flex justify-content-between">
+                <div class="tennis-box" id="tennis1">
+                    <img src="Tennis addidas.jpg" alt="Tennis 1" class="img-fluid rounded">
+                    <p>Tennis deportivos</p>
+                    <p class="price">$50.00</p>
+                </div>
+                <div class="tennis-box" id="tennis2">
+                    <img src="tennis2.jpg" alt="Tennis 2" class="img-fluid rounded">
+                    <p>Tennis casuales</p>
+                    <p class="price">$60.00</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="mb-4">
+            <h2 class="text-center"></h2>
+            <div id="contacto-container" class="box-blue p-3 rounded shadow text-center mx-auto" style="max-width: 400px;">
+                <h3>¡Contáctanos!</h3>
+                <form id="contacto-form">
+                    <input type="text" id="nombre" class="form-control mb-2" placeholder="Nombre" required>
+                    <input type="email" id="email" class="form-control mb-2" placeholder="Correo Electrónico" required>
+                    <textarea id="mensaje" class="form-control mb-2" placeholder="Mensaje" required></textarea>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+                </form>
+                <div id="mensaje-enviado" class="hidden">
+                    <p>¡Gracias por tu mensaje!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
